@@ -1,0 +1,13 @@
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\bin\Debug\netcoreapp3.1\PrimeraAplicacion.exe
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\bin\Debug\netcoreapp3.1\PrimeraAplicacion.deps.json
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\bin\Debug\netcoreapp3.1\PrimeraAplicacion.runtimeconfig.json
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\bin\Debug\netcoreapp3.1\PrimeraAplicacion.runtimeconfig.dev.json
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\bin\Debug\netcoreapp3.1\PrimeraAplicacion.dll
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\bin\Debug\netcoreapp3.1\PrimeraAplicacion.pdb
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\netcoreapp3.1\PrimeraAplicacion.csprojAssemblyReference.cache
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\netcoreapp3.1\PrimeraAplicacion.AssemblyInfoInputs.cache
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\netcoreapp3.1\PrimeraAplicacion.AssemblyInfo.cs
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\netcoreapp3.1\PrimeraAplicacion.csproj.CoreCompileInputs.cache
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\netcoreapp3.1\PrimeraAplicacion.dll
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\netcoreapp3.1\PrimeraAplicacion.pdb
+E:\LenguajesProgramacion\C#\Mi Estudio\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\netcoreapp3.1\PrimeraAplicacion.genruntimeconfig.cache

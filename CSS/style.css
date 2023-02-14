@@ -1,0 +1,218 @@
+body {color:black;}/*esto es para cambiar el color en todo el body*/
+#titulo2{color: red;}/*esto es para modificar segun el id de la etiqueta h1*/
+h1{color: black;}
+p{color: blue;}
+p.texto{color:  seagreen;}/*cambiar el color en los parrafos con clase texto al inicio*/
+.especial{color: saddlebrown;}/*para cambiar todos los parrafos con clase especial, solamente 'especial'*/
+p.especial{color: rgb(145, 150, 85);}/*cambiar el color de los parrafos que contengan la clase especial dentro de su clase*/
+div p {color: aquamarine;}
+div h2, div h3 {color: brown;}
+*{/*esto es un selector universal para cmabiar caracteristicas 
+    y propiedades, siempre y cuando no se haya definido en los selectores o etiquetas*/
+    font-size: 24px; /*modifica el tama;o de las letras de todo el documento*/
+}
+/*.color{color: #f00000;} manera de poner un color de la forma hexagesimal*/
+/*.color{color: rgb(red, green, blue);}manera de poner un color de la forma rgb*/
+/* .color { border: 5px red solid;} el estilo depende del color, ya se en 3D o 2D
+                                    3D: groove,ridge,inset,outset*/
+.color{
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 5px ;/*para poner un borde redondeado*/
+    border-width: 2rem;/*para el ancho del borde*/
+}/*esto nos ayuda a definir el borde sin necesidad de ponerle color*/
+
+#fondo{
+    color: white;
+    background-color: red; /*modifica el color de fondo*/
+    background-color: rgba(0,0,0);
+    /* background-color: rgba(0,0,0,0.3); permite pasarle la opasidad o 
+                                        trasparencia de este color
+                                        siendo 1 el nivel de transparencia solido y 0 un valor transparente*/
+    /* opacity: 0.3;/*Le da una transparecnia al elemento pro completo 
+                    y no solamente al especifico. 0 no se ve, 1 si se ve*/
+    
+                    /*INDICAR UNA IMAGEN DE FONDO*/
+    background-image: url('shinsekai.png');
+    height: 400px; /*ALTURA del fondo*/
+    background-size: contain;/*con cover se ajusta al ancho del explorador*/   
+    background-size: 200px 200px;/*ANCHO, ALTURA tama;o de la imagen para modificar su repeticiones,etc*/
+    background-repeat: repeat-x;/*para definir en que linea quiero q se repita(x o y)*/
+    background-position: center top;/* primer valor para indicarle donde se va quedar posicionada en el eje horizontal */
+                          /* segundo valor para indicale donde se va quedar posicionada en el eje vertical*  
+                          /*para cambiar la posicion donde empieza a repetirse nuestra imagen*/
+    
+    /*podemos simplificar todo esto en una sola linea*/
+    /* background: #f00 url(shinsekai.png) repeat-y center bottom ; */
+    /* PERO, el background tiene que estar siempre antes del background-size*/                          
+
+    /*PERO PODEMOS AGRUPARLO: background: #f00 url(shinsekai.png) repeat-y center bottom / 100px 100px ;*/
+    /*con implementamos las dimensiones de las imagenes sin necesidad de mucho codigo*/
+}
+
+/* MARGEN */
+.margen{
+    background-color: chocolate ;
+    margin: 15px 20px 25px 30px;/*espaciado fuera del background*/
+    /*el primero es el margen de arriba*/
+    /*el primero es el margen de derecha*/
+    /*el primero es el margen de abajo*/
+    /*el primero es el margen de left*/
+    /* margin: 15px;  ESTO HACE POR DEFECTO QUE LA DISTANCIA SEA IGUAL PARA TODOS LOS LADOS*/
+    padding: 30px 25px 20px 15px ;/* los lados son igual que margin, pero es el espacio dentro de background*/
+    /* padding: 30px; MISMA DISTANCIA PARA TODOS LADOS*/
+    /* padding: 30px 20px; 30PX DISTANCIA VERTICAL, 20PX DISTANCIA HORIZONTAL*/
+    /* padding: 30px 20px 15px; 30PX DISTANCIA VERTICAL, 20PX DISTANCIA HORIZONTAL, 15PX ABAJO*/
+    border: solid 2px black;/*se encuentra entre el margin y padding*/
+    height: 100px;/*altura*/
+    width: 400px;/*ancho*/
+    overflow: visible;/*hidden,hace que  todo el contenido que alcance a mostrarse, se oculte */
+                      /*scroll, agrega barras para deslizarnos y asi ver toda la informacion*/  
+    outline: 2px solid red;/*Borde que se coloca fuera del borde, pero esta antes del margin*/
+}
+
+.text{ 
+    color: black;
+    text-align: justify;/*Para dejar el texto center, justify, left en la pantalla*/
+    text-decoration: overline;/* none,underline,line-true(para mostrar una linea en medio del texto.... decoracion a los textos*/
+    text-shadow:3px 5px 3px;/*para mostrar un sombrea al texto*/
+                  /*primer valor para saber cuanto se va a mover a la derecha; segundo valor para mover la sombre hacia abajo*/
+                  /*3px es el difuminado que habria por la parte trasera del texto*/
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;va a intentar cargar las diferentes fuentes */
+    
+    /*GOOGLE FONTS PARA IMPORTAR FUENTES, PERO NO SE SOBRECARGARLAS*/
+    font-family: 'Tapestry', sans-serif;
+}
+
+
+/* LINKS HTML*/
+a:link{ /*cuando el link no fue visitado*/
+   /* luego del a: es el estado que esta el link*/
+    color: blueviolet;
+}
+
+a:visited{/*Va a aplicar este estilo a los links ya visitados*/
+    color: gray;
+    /*usar despues de los 1 anteriores*/
+}
+
+a:hover{/*Cuando estamos pasando el mouse por encima*/
+    color: yellow;
+    /*usar despues de los 2 anteriores*/
+}
+
+a:active{/* es cuando yo estoy pinchando el link*/
+    color: red;
+    /*usar despues de los 3 anteriores*/
+}
+
+/* LISTAS */
+/*Cuando tenemos muchos elementos y queremos que cada uno tengan propiedades, las litstas no son lo ideal*/
+ul{
+    background-color: gray;
+    list-style-type: circle; /*none viene por defecto con un padding de 40px*/
+    padding-left: 50px; /*pero podemos modficar el padding como queramos*/  
+
+    /*Por defecto los puntos de la lista esta fuera del texto*/
+    /* list-style-position: inside;con esto mostramos los puntos dentro del texto */
+}
+
+/*  TABLAS */
+table{
+    /* background-color: violet; */
+    width: 100%;/*le entregamos un ancho del 100%*/
+    border-collapse: collapse;/*Hace que no haya separacion entre las celdas de la tabla*/
+}
+
+th, td{
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+/* nos permite seleccionar algunso pares en particular*/
+/*even:impar , odd:par*/
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+/*tambien podemos utilizar cosas de los links  y cambiar el color al pasar el link*/
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;/*muestra el icono de la manito cuando pasemos el mouse*/
+}
+
+/* PROPIEDADES*/
+span{
+    display: block;/*display por defecto que encontramos en los elementos y hace que se agrege con un salto de linea*/
+    /* display: none;para desaparecer elementos */
+    /* visibility: hidden;los elementos siguen sin mostrarse */
+     /* width: 600px;ancho */
+    max-width: 600px;/* maximo ancho que puede tomar */
+    background: violet;
+
+}
+
+.inline{
+    display: inline;/*porque el display inline hace que los elementos no se agregen en nueva linea*/
+}
+
+
+#position{
+    /* position: static;valor por defecto que vienen todos los elementos de html */
+    /* position: relative;posicion relativa a donde tiene que estar posicionada el elemento */
+    /* left: 20px;tambien podemos usar top, right, botton y es cuanto queremos que se mueva */
+    /* top: 25px; */
+    /* position: fixed;le indica al explorador que se mantenga en todo el scroll, se una para opciones de navegacion o menus */
+    /* position: absolute;se queda posicionado con el elemento padre mas cercano, en caso no usa BODY la etiqueta */
+    position: sticky;/*nos entrega una mezcla entre relative y fixed*/
+    left: 20px;
+}
+
+.left{
+    float: left;/*indica la lado donde va estar el elemento y que espacio va a ocupar los px que le pasemos*/
+    width: 200px;
+    height: 200px;
+}
+.right{
+    float: right;    
+}
+
+.container{
+    height: 200px;
+}
+
+.card{
+    border: solid 1px #ddd;/*se muestran separados ya que el borde ocupado 1px*/
+    /*si ponemos en 0px todos los elementos estaran juntos*/
+    border-radius: 5px;
+    /* margin:  5px 15px; */
+    margin: 0;
+    /* padding: 10px 15px; */
+    padding: 10px 0;
+    width:33.3% ;/*cada elemento ocupado el 33,3% del ancho*/
+}
+
+.column {   
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block{
+    display: inline-block;/*cuando le pasamos esto podemos a;adirle un alto y un ancho a los documentos en html*/
+    height: 55px;
+    background-color: aquamarine;
+}
+
+.center{/*1. entregarle siempre un ancho*/
+    width: 200px;
+    margin: 0 auto;
+    background: aqua;
+    text-align:  center;
+}

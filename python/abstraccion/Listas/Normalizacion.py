@@ -1,0 +1,7 @@
+# LISTA
+L=[3,15,24,7,45,119,45,2,69]
+
+# CALCULAR EL VALOR MAXIMO
+m=max(L)
+LNUEVA=[i/m for i in L]
+print(LNUEVA)

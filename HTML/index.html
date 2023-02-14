@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!--le indica al explorador que estamso codificando en html5, caso de borrarlo estamos trabajando en quirks(90) -->
+<html>
+<head> 
+    <title>Mi primera web</title>
+    <style>
+        table,th,td{border: 1px solid black;}
+    </style>
+</head>
+<body>
+    <!-- TABLAS -->
+    <!-- agregamos siempre el ; cuando agregamos estilos-->
+    <table style="width: 300px; border:1px solid black;">
+        <!-- Fila dentro de nuestra tabla-->
+        <thead>
+            <tr>
+                <!-- Para indicar una cabecera dentro de la tabla-->
+                <!-- cada vez que ponemos un th, genera una columna -->
+                <th style="border: 1px solid saddlebrown;">Producto</th> 
+                <th style="border:1px solid purple;">Precio</th> 
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- td para poder definir elementos estandares dentro de nuestras celdas en la tabla-->
+                <!-- usamos el td para ingresar los elementos segun alos th-->
+                <td>audifonos a9</td><td>gratis</td>
+            </tr>
+            <tr>
+                <td>gorras g12</td>
+                <td>19,90</td>
+            </tr>
+        </tbody>
+        <!-- Usamos thead y tbody para el scroll-->
+        <tfoot>
+            <td></td>
+            <td>Total: 19,90</td>
+        </tfoot>
+    </table>
+
+    <!-- LISTAS -->
+    <ul><!-- lista no ordenada,al agregar informacion a nuestra lista
+        , estas apareceran con un punto negro -->
+        <!--items de la lista-->
+        <li>Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+    </ul>
+    <!-- Para lista ordenada, aparecen numeros antes de los elementos-->
+    <ol>
+        <li value="24">Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+        <!-- listas anidadas-->
+        <li>
+            <ol><!-- podemos modificar los sub elementos cambiando el"lower-alpha" por otro -->
+                <li style="list-style-type: lower-alpha;">sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- FORMULARIOS -->
+    <form action="/formulario" method="post"><!--los distintos campos que necesitamos para recopilar informacion del usuario-->
+       <label for="nombre">Nombre</label><!--Etiquetas dentro del form-->
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+        <br>
+        <!-- nosotros recopilacion este formulario para enviarlo a un servidor-->
+        <!-- usamos for y id para poner el input al clickear en nombre -->
+        <!-- usamos propiedades para ponerle valor a lo ingresado-->
+        <!-- llave "name" valor el nombre ingresado en name-->
+        <!-- placeholder para indicarle que tiene que poner-->
+        <!-- type luego de input para modificar la carateristica de la casilla-->
+        <label for="apellido">Apellido</label><!--Etiquetas dentro del form-->
+        <input type="text" id="apellido" name="apellido" placeholder="apellido"/><br>
+        <label for="comentario">Comentario</label><br>
+        <textarea rows="10" cols="50" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+        <!-- usamos rows y cols para modificar la caja de comentarios-->
+        <br><input type="submit"><!-- este boton toma todos los datos ingresados y lo envia al servidor, 
+        pero tenemos que indicarle en el "form"a adonde tiene que enviarlo -->
+        <br><button type="submit">Tipo submit</button>
+        <!-- para agregar un boton de envio y modificarlo usamos <button>-->
+        <br><button type="reste">Tipo reset</button>    
+        <br><button type="button">Tipo button</button>    
+    </form>
+
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <p>hola hello amio</p>
+    <hr>
+    <h2>WASAAAAAAAAAAAA</h2>
+    <p>en estes parrafo. <span style="color:aqua">ANDY</span> como estas,porque 
+    yo me preocupe demaiado pro todos <br> samiama </p>
+    <p>parrafo separado</p>
+    <!--este es un comentario y no aparece en la pag-->
+    <a href="https://www.google.com">Ir a google</a> <br>
+    <!-- esto hace que el buscador aparezca en mi pagina web, me recarga mi misma pagina-->
+    <a target="_blank" href="https://www.google.com" > Ir a google 2</a>
+    <!-- el target hace q me habra otra pesta;a -->
+
+    <!-- etiqueta para mostrar imagenes -->
+    <img src="https://cdn.coinranking.com/nft/0x60F80121C31A0d46B5279700f9DF786054aa5eE5/1162461.png?size=autox860"/>
+    <!-- esta primera forma es pasandole una ruta de la imagen -->
+    <img src="Imagenes/yoda.png"/>
+    <!-- segunda es pasando la direccion de la misma imagen dentro de la carpeta-->
+    <img src="Imagenes/yoda.png" width="400"/>
+    <!-- para modelar la imagen de cuantos pixeles de ancho,
+        altura quiero que sea tambien podemos usar heigth-->
+    <img src="Imagenes/yoda.png" width="400" height="200"/>
+    <!-- modificamos el ancho y altura de la imagen-->
+</body>
+</html>

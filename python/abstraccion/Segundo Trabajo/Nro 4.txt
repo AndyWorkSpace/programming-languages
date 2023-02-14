@@ -1,0 +1,9 @@
+
+def DigitosImpares(N):
+    if len(str(N))==4:
+        NroImpares=0
+        while N>0:
+            if (N%10)%2!=0:
+                NroImpares+=1 
+            N=N//10
+        return NroImpares

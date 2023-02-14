@@ -1,0 +1,17 @@
+CSS GRID
+
+podemos crear filas y columnas o una grilla
+
+Las grillas de css:
+- primero tenemos que acumular todos los datos para acumularlos dentro de una grilla
+- .grid{
+    display: grid;
+}  con esto estamos creando una grilla
+- grid-template-columns: 50% 50%; Para indicar que queremos 2 columnas y  si hay ams elementos se reparten en las columnas en orden
+- las grillas crean rejillas invisibles
+- grid-template-columns: 33% 33% 33%; Para tres columnas
+- grid-template-rows: auto 100px; auto hace que se ajuste el elemento al texto
+- div*10>lorem20  : para crear 10 div con texto de 20
+- manera mas eficiente de repartirlo por columnas es usando grid-template-columns: 1fr 1fr 1fr 1fr para tener 4 columnas
+- para un numero mayor de columnas usamos repeat((numero de veces a repetir algo),(1fr, la medida))
+- align-self:center solo para un elemento
